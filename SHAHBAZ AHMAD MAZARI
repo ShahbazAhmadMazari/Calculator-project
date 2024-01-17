@@ -1,0 +1,468 @@
+#include<iostream>//this is cin and cout control library
+#include<math.h>//this is mathimatical expression control library
+#include<iomanip>
+#include<windows.h>//this uses the windows settings and is colour control library
+#include<cctype>//this is alphabet control check control library
+#include<cstring>//this string library control library
+using namespace std;//this is cin and cout control function
+int main ()//main body of the program 
+{
+HANDLE h= GetStdHandle(STD_OUTPUT_HANDLE);//function to use windows properties for colouring text 
+cout<<""<<endl;//for new or end line
+int c=0;//veriable type 
+char a,A=0;//veriable type 
+float e,E;//veriable type 
+r:
+system("cls");
+ SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+ cout<<"(GROUP 4 PROJECT)\n "<<endl;
+ cout<<"made by\n"<<endl;
+ cout<<"1.SHAHBAZ AHMAD MAZARI"<<endl;//this a what we want to print on output screen
+ cout<<""<<endl;
+
+system("pause");
+ system("cls");
+ SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+  cout<<"\n\n\n\n"<<endl;
+ cout<<"\t\t\t   ================================"<<endl;
+ cout<<"\t\t\t    (-----     WELCOME    ------)"<<endl;//this a what we want to print on output screen
+ cout<<"\t\t\t   ________________________________"<<endl;
+  SetConsoleTextAttribute(h,15);
+ cout<<"\t\t\t "<<endl;
+ cout<<"\t\t\t [ THIS  PROJECT                     ]"<<endl;
+ cout<<"\t\t\t [                                   ]"<<endl; 
+ cout<<"\t\t\t [     IS LAUNCHED BY BSCS 1A        ]"<<endl;
+ cout<<"\t\t\t [                         (GROUP 4) ]"<<endl;//this a what we want to print on output screen
+ cout<<"\t\t\t [                                   ]"<<endl;
+ cout<<"\t\t\t [     THIS IS AN ADVANCE CALCUlATOR ]"<<endl;
+ cout<<"\t\t\t [                                   ]"<<endl;
+ cout<<"\t\t\t "<<endl;
+ cout<<"\t\t\t ================================"<<endl;
+ cout<<"\n\n\n"<<endl;
+ system("pause");
+ system("cls");
+ cout<<""<<endl;
+ cout<<""<<endl;
+
+ cout<<""<<endl;
+ start:
+ system("cls");
+   cout<<"\n\n\n"<<endl;
+   SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+ cout<<"\t\t\t --------MATH CALCULATOR------- "<<endl;
+ SetConsoleTextAttribute(h,13);//it is used to give colour the string or statement
+ cout<<""<<endl; 
+//this a what we want to print on output screen
+cout<<"\t\t\t ================================"<<endl;
+cout<<"\t\t\t (-----Functions & Options------)"<<endl;
+cout<<"\t\t\t ________________________________"<<endl;
+cout<<"\t\t\t "<<endl;
+cout<<"\t\t\t .................................."<<endl;
+SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+cout<<"\t\t\t (1):* MATH Tables*               |"<<endl;
+cout<<"\t\t\t (2):* Simple math Calculator*    |"<<endl;
+cout<<"\t\t\t (3):* logarithm MATH*            |"<<endl;
+cout<<"\t\t\t (4):* Factorial MATH *           |"<<endl;
+cout<<"\t\t\t (M):* more options *             |"<<endl;
+cout<<"\t\t\t (E):* EXIT the program*          |"<<endl;
+cout<<""<<endl;
+SetConsoleTextAttribute(h,13);//it is used to give colour the string or statement
+cout<<"\t\t\t =============================="<<endl;
+cout<<"\n\n\n"<<endl;
+SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+cout<<"\t\t\t selet an option  : "<<endl;
+cin>>a;
+switch (a){
+  case '1':
+       {
+	     system("cls");
+       { 
+	     SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+         cout<<"\t\t(Math Table) selected* "<<endl;
+           SetConsoleTextAttribute(h,14);//it is used to give colour the string or statement
+       cout<<"\t\t\t\t\t Note !! it can give table of 1 to 9 "<<endl;
+   a://this is a recycle position    
+    SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+         cout<<"Enter a Number : "<<endl;
+         char b;	  
+         cin>>b;
+         SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+	       if(b=='0'){
+	   	     goto start;
+	         }  
+         if (b>='a' || b<='z'&& b!=b){ 
+     	    	system("cls");
+     	         SetConsoleTextAttribute(h,12);//it is used to give colour the string or statement
+                 cout<<"\n\n\n\n\n\n\n\n\n\n"<<endl;
+                 cout<<"                       invalid input  (?_?)  sorry!  try  again"<<endl;
+                 SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+                   cout<<""<<endl;
+     	           system("pause");
+     	           system("cls");
+                    goto a;
+      
+       }
+     else{                       
+        
+               int x=b-48;//veriable type 
+                cout<<"The table of  "<<b<<" is :"<<endl;
+      
+           {
+            	 for(int i=0;i<=10;i++)
+	           {
+                  cout<<x<<"x"<<i<<" = "<<x*i<<endl;
+                    cout<<"-------------------------"<<endl;
+                    cout<<""<<endl;
+					}
+          cout<<"                                                      Enter "<<" '0'"<<" (main manu)"<<endl;
+          cout<<""<<endl;
+          goto a;
+            }
+          
+         } 
+	} 
+    SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+      goto a;
+      break;}
+
+case '2':
+ 
+char ch;
+int s,d;//veriable type 
+     {SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+        system("cls");
+      cout<<"\t\t(MATH CALCULATOR) selected* "<<endl;
+      cout<<""<<endl;
+       cout<<"example : 1+5"<<endl;
+b://this is a recycle position
+      cout<<"type here : "<<endl;
+         SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+         ch==0;
+        cin>>s>>ch>>d;
+        
+        if(s==0){
+         goto start;}
+       
+  switch (ch){
+
+   case '+':
+        SetConsoleTextAttribute(h,13);//it is used to give colour the string or statement
+          cout<<""<<endl;
+           cout<<"                      ANS = "<<s+d;
+         SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+         cout<<""<<endl;
+           cout<<"-------------------------"<<endl;
+         cout<<"                                                      Enter "<<" '0'"<<" (main manu)"<<endl;
+         cout<<""<<endl;
+         goto b;
+		    break;
+		    
+   case '-':
+         SetConsoleTextAttribute(h,13);//it is used to give colour the string or statement
+         cout<<""<<endl;
+          cout<<"                      ANS = "<<s-d;
+           cout<<""<<endl;
+         cout<<"-------------------------"<<endl;
+         cout<<"                                                      Enter "<<" '0'"<<" (main manu)"<<endl;
+         cout<<""<<endl;
+         goto b;
+      break;
+      
+   case '/':
+          SetConsoleTextAttribute(h,13);//it is used to give colour the string or statement
+           cout<<""<<endl;
+         cout<<"                      ANS = "<<s/d;
+         cout<<""<<endl;
+         cout<<"-------------------------"<<endl;
+         cout<<"                                                      Enter "<<" '0'"<<" (main manu)"<<endl;
+          cout<<""<<endl;
+          goto b;
+          break;
+          
+   case '*':
+   SetConsoleTextAttribute(h,13);//it is used to give colour the string or statement
+          cout<<""<<endl;
+           cout<<"                      ANS = "<<s*d;
+          SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+         cout<<""<<endl;
+         cout<<"-------------------------"<<endl;
+          cout<<"                                                      Enter "<<" '0'"<<" (main manu)"<<endl;
+           cout<<""<<endl;
+         goto b;
+         break;
+         
+   case '%':
+          SetConsoleTextAttribute(h,13);//it is used to give colour the string or statement
+          cout<<"                      ANS = "<<s%d;
+           SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+          cout<<""<<endl;
+           cout<<"-------------------------"<<endl;
+          cout<<"                                                      Enter "<<" '0'"<<" (main manu)"<<endl;
+            cout<<""<<endl;
+          goto b;}
+         break;}
+         
+case 'e':
+case 'E':{
+      cout<<""<<endl;
+      cout<<"-------------------------"<<endl;
+     SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+      cout<<"prgram is closed ! "<<endl;
+       cout<<"thanks for using this program @_@ "<<endl;
+     SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+      break;}
+      
+case '3': system("cls");
+
+     {
+
+
+   SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+      cout<<"\t\t(logarthm math) selected* "<<endl;
+      SetConsoleTextAttribute(h,14);//it is used to give colour the string or statement
+       cout<<"\t\t\t\t\t Note !! it can give log of 1 to 9 "<<endl;
+      cout<<" "<<endl;
+     SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+   c: //this is a recycle position   
+   cout<<"Enter a Number : "<<endl;
+     char b;
+        cin>>b;
+      
+        if ( b>='a' || b<='z'&& b!=b){
+     	    	system("cls");
+     	         SetConsoleTextAttribute(h,12);//it is used to give colour the string or statement
+                 cout<<"\n\n\n\n\n\n\n\n\n\n"<<endl;
+                 cout<<"                       invalid input  (?_?)  sorry!  try  again"<<endl;
+                 SetConsoleTextAttribute(h,15);
+                   cout<<""<<endl;
+     	           system("pause");
+     	           system("cls");
+                    goto c;
+      
+       }
+       else{
+	   
+    
+     int y =b-48;
+    if(y==0){
+	   	     goto start;
+       }
+     cout<<"ANS = "<<log(y)<<endl;
+       cout<<"-------------------------"<<endl;
+     cout<<"                                                      Enter "<<" '0'"<<" (main manu)"<<endl;
+     cout<<""<<endl;
+     goto c;
+break;}
+
+
+case 'r':
+case 'R':{
+ 
+     cout<<"program is restarted !"<<endl;
+      goto r;
+	 }}
+	 
+case '4':{
+
+       system("cls");
+      SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+       cout<<"\t\t(Factorial math) selected* "<<endl;
+       SetConsoleTextAttribute(h,14);//it is used to give colour the string or statement
+       cout<<"\t\t\t\t\t Note !! it can give fct of 1 to 9 "<<endl;
+ d://this is a recycle position
+     {
+     
+      long factorial = 1.0;//veriable type 
+     SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+       cout<<""<<endl;
+     cout << "Enter a integer: ";
+     SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+    char b;	  
+         cin>>b;
+         SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+	      
+  if (b>='a' || b<='z'&& b!=b){
+     	    	system("cls");
+     	         SetConsoleTextAttribute(h,12);//it is used to give colour the string or statement
+                 cout<<"\n\n\n\n\n\n\n\n\n\n"<<endl;
+                 cout<<"                       invalid input  (?_?)  sorry!  try  again"<<endl;
+                 SetConsoleTextAttribute(h,15);
+                   cout<<""<<endl;
+     	           system("pause");
+     	           system("cls");
+                    goto d;
+      
+       }
+    
+    else {
+    	int y = b-48;
+    	 if(y==0){
+	   	     goto start;
+       }
+        for(int i = 1; i <= y; ++i) {
+            factorial *= i;
+        }cout<<""<<endl;
+        cout << "         Factorial of " << y << " = " << factorial<<"\n"<<endl; 
+      
+     cout<<"                                                      Enter "<<" '-1'"<<" (main manu)"<<endl;
+
+       } 
+     goto d;
+     
+     break;}
+          
+         } 
+    
+case 'm':
+case 'M': 
+      system("cls");
+ m://this is a recycle position
+	    SetConsoleTextAttribute(h,14);//it is used to give colour the string or statement
+  
+      cout<<"       ================================"<<endl;
+      cout<<"       (-----     more options    ------)"<<endl;
+      cout<<"       ________________________________"<<endl;
+      cout<<"       "<<endl;
+      SetConsoleTextAttribute(h,13);
+      cout<<"       [(A)*TAN(X)        (D)x~power       ]"<<endl;
+      cout<<"       [                                   ]"<<endl;
+      cout<<"       [(B)*COS(X)        (E)square root   ]"<<endl;
+      cout<<"       [                                   ]"<<endl;
+      cout<<"       [(C)*SIN(X)        (-1) Main manu   ]"<<endl;
+      cout<<"                                            "<<endl;
+      cout<<"                        "<<endl;
+      SetConsoleTextAttribute(h,14);//it is used to give colour the string or statement
+     cout<<"       ================================"<<endl;
+     char m;
+        cin>>m;
+                   switch (m){
+
+                        case 'a':
+                         case 'A':
+                     system("cls");
+                         SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+                          cout<<"enter a number for which you want to get (TAN) value \n"<<endl;
+                 m1: //this is a recycle position
+		                 SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+                          cout<<"enter number\n";
+                            float o;                           
+                           cin>>o;   						      
+						   if (isalpha(o)) {
+						   cout<<"invalid input";
+						   
+						   }       
+						   else {
+						              
+                         if(o==-1){
+                         goto start;}SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+                         cout<<"TAN"<<o<<"   =  "<<tan(o)<<endl;
+                         SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+                         cout<<"                                                      Enter "<<" '-1'"<<" (main manu)"<<endl;
+                         goto m1;}
+
+                    break;
+                         case 'c':
+                          case 'C':
+                         system("cls");
+                         SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+                         cout<<"enter a number for which you want to get (SIN) value \n"<<endl;
+                m2://this is a recycle position
+				         SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+                         cout<<"enter number\n";
+                        float q;
+                         cin>>q;
+                         if(q==-1){
+                         goto start;}
+						 SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+                         cout<<"SIN"<<q<<"   =  "<<sin(q)<<endl;
+                         
+                         cout<<"                                                      Enter "<<" '-1'"<<" (main manu)"<<endl;
+                           goto m2;
+  
+                            break;
+                     case 'b':
+                       case 'B': 
+                           system("cls");
+                         SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+                         cout<<"enter a number for which you want to get (COS) value \n"<<endl;
+                m3: //this is a recycle position 
+				         SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+                         cout<<"enter number\n";
+                      float p; 
+                         cin>>p;
+                          if(p==-1){
+                         goto start;}SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+                          cout<<"COS"<<p<<"   =  "<<cos(p)<<endl;
+						  SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+                          cout<<"                                                      Enter "<<" '-1'"<<" (main manu)"<<endl;
+                          goto m3;
+                     break;
+                       case 'd':
+                        case 'D':
+                         system("cls");
+                         SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+                         cout<<"first enter the number and then its power you want \n"<<endl;
+                m4: //this is a recycle position    
+				 SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+                         cout<<"enter number\n";
+                          float v;
+                          float l;
+                          cin>>v;
+                         cout<<"enter power\n";
+                        cin>>l;
+                         if(v==-1||l==-1){
+                         goto start;}SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+                           cout<<" ANS  "<<"   =  "<<pow(v,l)<<endl;
+                            SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+                             cout<<"                                                      Enter "<<" '-1'"<<" (main manu)"<<endl;
+                          goto m4;
+                     break;
+                     case 'e':
+                     case 'E':{
+											 
+                     	float n;
+                      system("cls");
+                         SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+                         cout<<"enter a number for which you want to get squar root value \n"<<endl;
+                m5: //this is a recycle position
+				 SetConsoleTextAttribute(h,15);//it is used to give colour the string or statement
+                 cout<<"enter number\n";
+                      cin>>n;
+                      if(n==-1){
+                         goto start;}
+						 SetConsoleTextAttribute(h,10);//it is used to give colour the string or statement
+						 cout<<" ANS  =  "<<sqrt(n)<<endl;
+                         SetConsoleTextAttribute(h,11);//it is used to give colour the string or statement
+                         cout<<"                                                      Enter "<<" '-1'"<<" (main manu)"<<endl;
+                           goto m5;
+						   break;}
+                            
+                     
+                       default :{system("cls");
+                            SetConsoleTextAttribute(h,12);//it is used to give colour the string or statement
+                             cout<<"\n\n\n\n\n\n\n\n\n\n"<<endl;
+                              cout<<"                       invalid input  (?_?)  sorry!  try  again"<<endl;
+                             SetConsoleTextAttribute(h,15);
+                             cout<<""<<endl;
+                             cout<<""<<endl;
+                             cout<<""<<endl;
+                             cout<<""<<endl;
+                              system("pause"); 
+                             goto m;}
+                              }
+    break;
+  default :{system("cls");
+           SetConsoleTextAttribute(h,12);//it is used to give colour the string or statement
+           cout<<"\n\n\n\n\n\n\n\n\n\n"<<endl;
+         cout<<"                       invalid input  (?_?)  sorry!  try  again"<<endl;
+          SetConsoleTextAttribute(h,15);
+         cout<<""<<endl;
+          cout<<""<<endl;
+         cout<<""<<endl;
+          cout<<""<<endl;
+          system("pause");
+         goto start;}}
+
+ } 
+
+
